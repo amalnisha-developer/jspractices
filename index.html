@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <h1 id="head">Hello</h1>
+    <div id="box">
+
+    </div>
+
+    <script>
+
+        let head = document.getElementById("head")
+        head.textContent += " world"
+
+        let box = document.getElementById("box")
+        box.className ="bodyclass"
+        box.innerHTML = "<p>Bye world</p>"
+        box.style.color = "red"
+        console.log(box.textContent);
+
+        let element= document.createElement("p")
+
+        element.innerHTML = "hello"
+        head.prepend(element)
+
+        console.log(element.innerHTML);
+        
+      
+    </script>
+
+</body>
+</html>

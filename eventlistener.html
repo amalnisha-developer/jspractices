@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="btn">click</button>
+    <script>
+        let btn = document.getElementById("btn")
+         //mouse click
+        btn.addEventListener('click', (event) => {
+
+            btn.textContent = "hello"
+            console.log("clicked");
+
+        })
+        //mousehover
+        btn.addEventListener('mouseover', (event) => {
+
+            btn.textContent = "helloguys"
+            console.log("hover");
+
+        })
+
+        //mouse out 
+
+        btn.addEventListener('mouseout', (event) => {
+        btn.textContent = "click"
+        console.log("mouseout");
+
+})
+    </script>
+</body>
+
+</html>
